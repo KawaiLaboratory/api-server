@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
   include DeviseTokenAuth::Concerns::User
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-  VALID_MAC_REGEX   = /\A(?:[0-9a-fA-F]{2}\-){5}[0-9a-fA-F]{2}\z/i
+  VALID_MAC_REGEX   = /\A(?:[0-9a-fA-F]{2}\:){5}[0-9a-fA-F]{2}\z/i
 
   has_many :logs
 
