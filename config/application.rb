@@ -32,6 +32,5 @@ module ApiServer
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
     config.time_zone = 'Tokyo'
-    config.assets.initialize_on_precompile = false
   end
 end
