@@ -1,6 +1,6 @@
 class Log < ApplicationRecord
   belongs_to :user
 
-  validates :detected_ble_address, presence: true, format: { with: User::VALID_MAC_REGEX }
-  validates :rssi                , presence: true
+  validates :detected_ble_token, presence: true, format: { with: User::VALID_TOKEN_REGEX }
+  validates :rssi              , presence: true
 end

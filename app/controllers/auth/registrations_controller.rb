@@ -14,7 +14,7 @@ module Auth
   private
 
     def sign_up_params
-      params.require(:registration).permit(:name, :email, :nickname, :ble_address, :password, :password_confirmation)
+      params.require(:registration).permit(:name, :email, :nickname, :ble_token, :password, :password_confirmation)
     end
   end
 end

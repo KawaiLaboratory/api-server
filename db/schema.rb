@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2020_09_29_040553) do
 
   create_table "logs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id"
-    t.string "detected_ble_address", null: false
+    t.string "detected_ble_token", null: false
     t.integer "rssi", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2020_09_29_040553) do
     t.string "last_sign_in_ip"
     t.string "name", null: false
     t.string "email", null: false
-    t.string "ble_address", null: false
+    t.string "ble_token", null: false
     t.string "nickname"
     t.text "tokens"
     t.datetime "created_at", null: false
