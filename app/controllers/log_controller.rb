@@ -22,6 +22,6 @@ class LogController < ApplicationController
   private
 
   def log_params
-    params.require(:log).permit(:user_id, :detected_ble_token, :rssi)
+    params.require(:log).permit(:user_id, :detected_ble_token, :rssi, :txpower)
   end
 end
