@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2020_09_29_040553) do
 
   create_table "logs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id"
-    t.string "detected_ble_tokenus", null: false
+    t.string "detected_ble_token", null: false
     t.integer "rssi", null: false
     t.integer "txpower", null: false
     t.datetime "created_at", null: false
